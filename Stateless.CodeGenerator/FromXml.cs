@@ -4,7 +4,6 @@ using System.Xml;
 
 namespace Stateless.CodeGenerator
 {
-
     public class FromXml
     {
         // Creates code to create a new state machine, based on the provided xml.
@@ -17,7 +16,7 @@ namespace Stateless.CodeGenerator
             doc.LoadXml(xml);
             var root = doc.DocumentElement;
 
-            var initialStateNode = root.SelectSingleNode("//InitialState").FirstChild;
+            var initialStateNode = root.SelectSingleNode("//StartState").FirstChild;
             var stateNodes = root.SelectSingleNode("//States");
             var transitionNodes = root.SelectSingleNode("//Transitions");
 

@@ -79,7 +79,7 @@ namespace Stateless.Generator.Tests
             var xml =
 @"<?xml version=""1.0"" encoding=""utf-8""?>
 <StateMachine>
-  <InitialState>" + nameOfInitialState + @"</InitialState>
+  <StartState>" + nameOfInitialState + @"</InitialState>
   <States>
     <State Name=""State1"" /> 
     <State Name=""State2"" /> 
@@ -107,7 +107,7 @@ namespace Stateless.Generator.Tests
             var xml =
 @"<?xml version=""1.0"" encoding=""utf-8""?>
 <StateMachine>
-  <InitialState>" + nameOfInitialState + @"</InitialState>
+  <StartState>" + nameOfInitialState + @"</InitialState>
   <States>
     <State Name=""State1"" /> 
     <State Name=""State2"" /> 
